@@ -250,4 +250,71 @@ button{
 .avatar{
     order: 1;
 }
+.button-blue .testimonial{
+    margin: 50px auto 0 auto;
+}
+.pricing{
+    background-color: #182333;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 167px;
+    padding: 100px 200px;
+    
+}
+.pricing > div:nth-child(1){
 
+}
+.dollar{
+    display: inline-block;
+}
+.month-user{
+    display: inline-block;
+}
+h5.free, .month-user, .p-most{
+    color: white;
+}
+.dollar{
+    color: #F3CD03;
+}
+.pricing div:nth-child(1) > *{
+    color: white;
+}
+.pricing .pricing-1 p{
+    margin-top: 32px;
+}
+.free{
+    margin-bottom: 24px;
+}
+.month-user{
+    margin-bottom: 32px;
+}
+.p-most{
+    margin-bottom: 24px;
+}
+
+/* SECTION ERGONOMIC */
+.ergonomic{
+    background-image: linear-gradient(#E9FAFF, white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    padding: 100px 200px;
+}
+.ergonomic .button-blue{
+    margin-top: 24px;
+}
+
+
+/* FOOTER */
+footer .nav-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.social{
+    justify-self: end;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    justify-items: end;
+}
