@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Circular Std Book";
+    src: url("/fonts/Circular\ Std\ Book.ttf");
+    font-family: "Circular Std Black";
+    src: url("/fonts/Circular\ Std\ Black.ttf");
+    font-family: "Circular Std Bold Italic";
+    src: url("/fonts/Circular\ Std\ Bold\ Italic.ttf");
+    font-family: "Circular Std Bold";
+    src: url("/fonts/Circular\ Std\ Bold.ttf");
+    font-family: "Circular Std Medium";
+    src: url("/fonts/Circular\ Std\ Medium.ttf");
+}
+html, body{
+    margin: 0;
+    font-family: "Circular Std Book";
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+}
+h1{
+    font-size: 71px;
+    line-height: 78px;
+    font-family: "Circular Std Black";
+    color: #112D57;
+}
+h2{
+    font-size: 56px;
+    line-height: 65px;
+    font-family: "Circular Std Bold";
+    color: #5C5C5C;
+}
+h3{
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Circular Std Book";
+    color: #5C5C5C;
+}
+h4{
+    font-size: 24px;
+    line-height: 38px;
+    font-family: "Circular Std Book";
+    color: #5C5C5C;
+}
+h5{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Circular Std Book";
+    color: #5C5C5C;
+}
+p{
+    font-size: 19px;
+    line-height: 30px;
+    font-family: "Circular Std Book";
+    color: #5C5C5C;
+}
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+nav{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: #20262A;
+    font-size: 18px;
+}
+.nav-container{
+    
+    display: grid;
+    max-width: 1120px;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(120, auto);
+    align-items: center;
+    
+}
+.logo{
+    justify-self: start;
+}
+.menus{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.login{
+    justify-self: end;
+}
+button{
+    height: 52px;
+    min-width: 140px;
+    border-radius: 85px;
+    font-size: 18px;
+    padding: 0 32px;
+    font-family: "Circular Std Bold";
+}
+.button-border{
+    color: #00B6F0;
+    border: 1px solid #00B6F0;
+    background-color: transparent;
+    
+}
+.button-blue{
+    border: none;
+    background-color: #00B6F0;
+    color: white;
+    margin-right: 12px;
+}
+.button-white{
+    border: none;
+    background-color: white;
+    margin-left: 12px;
+    
+}
+.hero{
+    background-image: linear-gradient(white 20%, rgba(0, 255, 198, 25%) 60%, white );
+    padding-top: 130px;
+   
+}
+.shape{
+    background-image: url("/img/shape.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.shape p{
+    margin: 16px 0 0 0;
+}
+
+.hero > * {
+    text-align: center;
+}
+.wrapper-button-cta{
+    margin: 80px auto 0  auto;
+}
+.browser-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px; 
+    max-width: 90%;
+    /* position: relative; */
+    /* bottom: 600px; */
+}
+.cta-text{
+    padding: 62px 0;
+}
+.cta-text h3{
+    color: #F3CD03;
+}
+.cta-text h2{
+    padding-top: 24px;
+    color: #20262A;
+}
+.cta-text p {
+    margin-top: 24px;
+}
+.cta-text > *{
+    text-align: center;
+}
+
+.wrapper-button-cta-2{
+    margin-top: 60px;
+}
+.margin-l-12{
+    margin-left: 12px;
+}
+.wrapper-button-cta-2 .button-blue{
+    min-width: 209.91px;
+}
+.bg-blue{
+    background-image: url("/img/vector\ blue\ full.png");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.feature-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    max-width: 1120px;
+    margin: 162px auto 0 auto;
+    
+}
+.wrapper-feature-1{
+    align-self: center;
+}
+.wrapper-feature-1 h3, .wrapper-feature-1 p{
+    margin-bottom: 24px;
+}
+.a-learn{
+    color: #00B6F0;
+}
