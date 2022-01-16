@@ -180,19 +180,18 @@ button{
 
 /* SECTION FEATURE 1 */
 .bg-blue{
-    /* background-image: url("/img/vector\ blue\ full.png"); */
-
-    /* Center and scale the image nicely */
-    background-position: center;
+    background-image: url("/img/vector\ blue\ full.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .feature-1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     max-width: 1120px;
-    margin: 162px auto 0 auto;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .wrapper-feature-1{
     align-self: center;
@@ -209,7 +208,12 @@ button{
 
 
 
-/* SECTION FEATURE 1 */
+/* SECTION FEATURE 2 */
+.bg-yellow{
+    background-image: url("/img/vector\ yellow\ full.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .bg-yellow .wrapper-feature-1 {
     order: 1;
 }
@@ -252,7 +256,11 @@ button{
 
 /* TESTIMONIAL SECTION */
 .testimonial{
-    
+    padding-bottom: 50px;
+    background-image: url("/img/tompel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 .testimonial h3{
     margin-top: 220px;
@@ -289,7 +297,7 @@ button{
 }
 .btn-all-testi{
     display: block;
-    margin: 50px auto 108px auto;
+    margin: 50px auto 0 auto;
 }
 
 
