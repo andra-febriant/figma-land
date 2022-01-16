@@ -12,10 +12,12 @@
     src: url("/fonts/Circular\ Std\ Medium.ttf");
 }
 html, body{
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-family: "Circular Std Book";
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
 }
 h1{
     font-size: 71px;
@@ -66,12 +68,14 @@ a{
 nav{
     background-color: white;
 }
-
+.hamburger{
+    display: none;
+}
 .nav-container{
-    
     display: grid;
-    max-width: 1120px;
+    max-width: 90%;
     margin: auto;
+    padding-top: 60px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(120, auto);
     align-items: center;
@@ -80,7 +84,7 @@ nav{
 .logo{
     justify-self: start;
 }
-.menus{
+nav .menus{
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -101,6 +105,11 @@ button{
     color: #00B6F0;
     border: 1px solid #00B6F0;
     background-color: transparent;
+    cursor:pointer;
+    
+}
+.button-border:hover{
+    background-color: rgba(0,182,240,.05);
     
 }
 .button-blue{
@@ -108,14 +117,20 @@ button{
     background-color: #00B6F0;
     color: white;
     margin-right: 12px;
+    cursor:pointer;
+}
+.button-blue:hover{
+    background-color: #11AEDF;
 }
 .button-white{
     border: none;
     background-color: white;
     margin-left: 12px;
-    
+    cursor:pointer;
 }
-
+.button-white:hover{
+    background-color: #E7E5E5;
+}
 
 /* HERO SECTION */
 .hero{
@@ -182,7 +197,8 @@ button{
 .bg-blue{
     background-image: url("/img/vector\ blue\ full.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: center;
 }
 .feature-1{
     display: grid;
@@ -205,6 +221,10 @@ button{
 .a-learn{
     color: #00B6F0;
 }
+.width-100{
+    width: 100%;
+
+}
 
 
 
@@ -212,7 +232,8 @@ button{
 .bg-yellow{
     background-image: url("/img/vector\ yellow\ full.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: center;
 }
 .bg-yellow .wrapper-feature-1 {
     order: 1;
@@ -308,10 +329,6 @@ button{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 167px;
     padding: 100px 200px;
-    
-}
-.pricing > div:nth-child(1){
-
 }
 .dollar{
     display: inline-block;
@@ -363,11 +380,213 @@ footer .nav-container{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+footer .menus{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+}
 .social{
-    justify-self: end;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 8px;
     justify-items: end;
+}
+
+
+/* MEDIA SCREEN TAB */
+@media (max-width: 821px) {
+    nav .nav-container{
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    nav .menus{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        justify-self: end;
+    }
+    .hamburger img{
+        height: 40px;
+    }
+    .feature-1{
+        padding-left: 32px;
+        padding-right: 32px;
+    }   
+    .bg-blue, div.bg-yellow{
+        background-size: contain;
+    } 
+    div.progress-wrapper{
+        width: 80%;
+    }
+    .pricing, .ergonomic{
+        grid-gap: 80px;
+        padding: 100px 100px;
+        
+    }
+    footer .nav-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+    footer .nav-container > *{
+        justify-self: center;
+    }
+    
+    footer .menus > *{
+        justify-self: center;
+    }
+    .nav-container .logo img{
+        display: block;
+        margin: auto;
+    }
+    .social .face-logo{
+        justify-self: center;
+    }
+    .social .linked-logo{
+        justify-self: start;
+    }
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 376px) {
+    h1{
+        font-size: 56px;
+        line-height: 65px;
+        font-family: "Circular Std Black";
+        color: #112D57;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 42px;
+        font-family: "Circular Std Book";
+        color: #5C5C5C;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 38px;
+        font-family: "Circular Std Book";
+        color: #5C5C5C;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 28px;
+        font-family: "Circular Std Book";
+        color: #5C5C5C;
+    }
+    h5{
+        font-size: 16px;
+        line-height: 28px;
+        font-family: "Circular Std Book";
+        color: #5C5C5C;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Circular Std Book";
+        color: #5C5C5C;
+    }
+    a{
+        text-decoration: none;
+        color: #20262A;
+        font-size: 18px;
+    }
+    
+    nav .nav-container{
+        grid-template-columns: 1fr 1fr;
+        padding-top: 24px;
+    }
+    nav .nav-container div.login{
+        display: none;
+    }
+    .logo{
+        grid-column: 1/2;
+    }
+    .hamburger{
+        grid-column: 2/3;
+    }
+    section.hero{
+        padding-top: 60px;
+    }
+    .shape h1, .shape p, .shape .wrapper-button-cta{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    div.wrapper-button-cta{
+        margin-top: 40px;
+    }
+    .wrapper-button-cta .button-blue, .wrapper-button-cta-2 .button-blue{
+        display: block;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+    .wrapper-button-cta .button-white, .wrapper-button-cta-2 .button-border{
+        
+        display: block;
+        margin: auto;
+    }
+    .feature-1{
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+    .feature-1 div:nth-child(2){
+        grid-row: 1/2;
+    }
+    .wrapper-feature-1{
+        grid-row: 2/3;
+    }
+    .bg-yellow .feature-1{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .rethink{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    img.progress-bar{
+        display: block;
+        width: 100%;
+    }
+    .rethink .progress-wrapper{
+        width: 100%;
+        margin: 32px 0;
+    }
+    .pricing, .ergonomic{
+        padding-left: 32px;
+        padding-right: 32px;
+        grid-template-columns: 1fr;
+    }
+    .ergonomic{
+        row-gap: 24px;
+    }
+    .ergonomic *{
+        text-align: center;
+    }
+    .pricing-1{
+        text-align: center;
+    }
+    .pricing-2{
+        text-align: center;
+    }
+    footer .nav-container{
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    footer.logo{
+        grid-row: 1/2;
+    }
+    footer div.nav-container div.menus{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 2/3;
+        row-gap:16px;
+    }
+    footer div.nav-container div.menus > *{
+        justify-self: center;
+    }
+    footer .social{
+        grid-row: 3/4;
+    }
 }
