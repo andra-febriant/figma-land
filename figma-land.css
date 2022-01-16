@@ -1,3 +1,4 @@
+/* ALL */
 @font-face {
     font-family: "Circular Std Book";
     src: url("/fonts/Circular\ Std\ Book.ttf");
@@ -55,14 +56,17 @@ p{
 h1, h2, h3, h4, h5, p{
     margin: 0;
 }
-nav{
-    background-color: white;
-}
 a{
     text-decoration: none;
     color: #20262A;
     font-size: 18px;
 }
+
+/* NAVIGATION */
+nav{
+    background-color: white;
+}
+
 .nav-container{
     
     display: grid;
@@ -111,6 +115,9 @@ button{
     margin-left: 12px;
     
 }
+
+
+/* HERO SECTION */
 .hero{
     background-image: linear-gradient(white 20%, rgba(0, 255, 198, 25%) 60%, white );
     padding-top: 130px;
@@ -140,6 +147,9 @@ button{
     /* position: relative; */
     /* bottom: 600px; */
 }
+
+
+/* CTA TEXT SECTION */
 .cta-text{
     padding: 62px 0;
 }
@@ -166,6 +176,9 @@ button{
 .wrapper-button-cta-2 .button-blue{
     min-width: 209.91px;
 }
+
+
+/* SECTION FEATURE 1 */
 .bg-blue{
     /* background-image: url("/img/vector\ blue\ full.png"); */
 
@@ -193,9 +206,16 @@ button{
 .a-learn{
     color: #00B6F0;
 }
+
+
+
+/* SECTION FEATURE 1 */
 .bg-yellow .wrapper-feature-1 {
     order: 1;
 }
+
+
+/* SECTION RETHINK */
 .rethink h1{
     margin-top: 162px;
     text-align: center;
@@ -207,12 +227,14 @@ button{
 .progress-wrapper{
     width: 757px;
     margin: 80px auto 52px auto;
-    background-color: orange;
 }
 .progress-bar{
     width: 100%;
 }
-.rethink div{
+/* .rethink div{
+    display: inline-block;
+} */
+.rethink .facebook{
     display: inline-block;
 }
 .number{
@@ -221,15 +243,21 @@ button{
 .clear{
     clear: right;
 }
-.get-started{
-    margin: 0 auto;
+
+.btn-get-started{
+    display: block;
+    margin: auto;
 }
+
+
+/* TESTIMONIAL SECTION */
 .testimonial{
     
 }
 .testimonial h3{
     margin-top: 220px;
     text-align: center;
+    color: #20262A;
 }
 .testimonial img{
     margin-top: 50px;
@@ -242,17 +270,30 @@ button{
     text-align: center;
 }
 .wrapper-avatar{
-    background-color: orange;
+    margin: 50px auto 0 auto;
     display: grid;
     width: 300px;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 14px;
 }
 .avatar{
-    order: 1;
+    align-self: center;
+    justify-self: end;
 }
-.button-blue .testimonial{
-    margin: 50px auto 0 auto;
+.avatar img{
+    margin: 0;
 }
+
+.name-job h5{
+    font-size: 16px;
+}
+.btn-all-testi{
+    display: block;
+    margin: 50px auto 108px auto;
+}
+
+
+/* PRICING SECTION */
 .pricing{
     background-color: #182333;
     display: grid;
@@ -292,6 +333,7 @@ h5.free, .month-user, .p-most{
     margin-bottom: 24px;
 }
 
+
 /* SECTION ERGONOMIC */
 .ergonomic{
     background-image: linear-gradient(#E9FAFF, white);
@@ -302,6 +344,9 @@ h5.free, .month-user, .p-most{
 }
 .ergonomic .button-blue{
     margin-top: 24px;
+}
+.ergonomic h3{
+    color: #20262A;
 }
 
 
